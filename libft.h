@@ -118,17 +118,15 @@ int				ft_intlenght(int nb);
 ** get_next_line elements
 */
 
-# define BUFF_SIZE 1000
+# define BUFF_SIZE 300
 
-typedef struct s_fd	t_fd;
-
-struct			s_fd
+typedef struct	s_gnl
 {
-	char	content[BUFF_SIZE + 1];
-	int		fd;
-	int		last_read;
-	t_fd	*next;
-};
+	struct s_gnl	*next;
+	char			*actual;
+	char			*temp;
+	int				current_fd;
+}				t_gnl;
 
 int				get_next_line(int fd, char **line);
 
