@@ -6,7 +6,7 @@
 #    By: vveyrat- <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/10/04 10:38:57 by vveyrat-     #+#   ##    ##    #+#        #
-#    Updated: 2018/11/22 01:33:30 by vveyrat-    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/05/07 13:48:03 by vveyrat-    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -44,7 +44,8 @@ ISSRCS=		ft_isalpha.c \
 			ft_isdigit.c \
 			ft_isprint.c \
 			ft_isspace.c \
-			ft_incharset.c
+			ft_incharset.c \
+			ft_is_strdigit.c
 
 
 LSTSRCS=	ft_lstadd.c \
@@ -97,8 +98,11 @@ STRSRCS=	ft_strcat.c \
 			ft_striteri.c \
 			ft_strjoin.c \
 			ft_fstrjoin.c \
+			ft_fstrjoin_begin.c \
+			ft_fstrjoin_end.c \
 			ft_strlcat.c \
 			ft_strlen.c \
+			ft_strcutlen.c \
 			ft_strmap.c \
 			ft_strmapi.c \
 			ft_strncat.c \

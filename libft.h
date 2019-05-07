@@ -6,7 +6,7 @@
 /*   By: vveyrat- <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/02 20:47:59 by vveyrat-     #+#   ##    ##    #+#       */
-/*   Updated: 2019/01/24 15:31:52 by vveyrat-    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/05/07 13:48:54 by vveyrat-    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -33,6 +33,7 @@ int				ft_isascii(int c);
 int				ft_isdigit(int c);
 int				ft_isprint(int c);
 int				ft_incharset(char c, const char *charset);
+int				ft_is_strdigit(char *str);
 char			*ft_itoa(int c);
 char			*ft_itoa_base(int value, int base);
 char			*ft_ultoa_base(unsigned long value, int base);
@@ -58,6 +59,7 @@ void			ft_putstr_fd(char const *s, int fd);
 char			*ft_strcat(char *s1, const char *s2);
 char			*ft_strcapitalize(char *s);
 char			*ft_strchr(const char *s, int c);
+size_t			ft_strcutlen(const char *s, char c);
 char			*ft_strpbrk(const char *str, const char *charset);
 void			ft_strclr(char *s);
 int				ft_strcmp(const char *s1, const char *s2);
@@ -70,6 +72,8 @@ void			ft_striter(char *s, void (*f)(char *));
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_fstrjoin(char **s1, char **s2, int free_s1, int free_s2);
+char			*ft_fstrjoin_begin(char *s1, char **s2);
+char			*ft_fstrjoin_end(char **s1, char *s2);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 size_t			ft_strlen(const char *s);
 char			*ft_strmap(char const *s, char (*f)(char));
