@@ -6,7 +6,7 @@
 #    By: vveyrat- <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/10/04 10:38:57 by vveyrat-     #+#   ##    ##    #+#        #
-#    Updated: 2019/05/07 13:48:03 by vveyrat-    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/05/10 11:51:19 by vveyrat-    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -134,23 +134,33 @@ OBJ= $(SRCS:.c=.o)
 all: $(NAME)
 
 %.o: %.c
-	$(COMP) -o $@ -c $<
+	@$(COMP) -o $@ -c $<
+	@if test -s $*.c; then \
+	echo "\033[2mCompiling $*.c ......\033[0;32m  [COMPILED]\033[00m"; \
+	else \
+	echo "\033[3mCompiling $*.c ......\033[00m\  [FAILED]"; fi
 
 $(NAME): $(OBJ)
-	@printf "Creation de la libft\n"
+	@echo "\033[0;34m|---------------------------------|\033[0m"
+	@echo "\033[0;34m|----------\033[1;34mCREATED LIBFT\033[0;34m----------|\033[0m"
+	@echo "\033[0;34m|---------------------------------|\033[0m"
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
 	@printf "\n"
 
 clean:
-	@printf "Suppression des .o\n"
 	@rm -f */*.o
-	@printf "\n"
+	@echo "\033[0;33m|---------------------------------|\033[0m"
+	@echo "\033[0;33m|-------\033[1;33mDELETED OBJECT FILES\033[0;33m------|\033[0m"
+	@echo "\033[0;33m|---------------------------------|\033[0m"
+	@echo ""
 
 fclean: clean
-	@printf "Suppression de la libft.a\n"
 	@rm -f $(NAME)
-	@printf "\n"
+	@echo "\033[0;31m|---------------------------------|\033[0m"
+	@echo "\033[0;31m|---------\033[1;31mDELETED LIBFT.A\033[0;31m---------|\033[0m"
+	@echo "\033[0;31m|---------------------------------|\033[0m"
+	@echo ""
 
 re: fclean all
 
