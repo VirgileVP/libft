@@ -23,5 +23,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		n--;
 		memsrc++;
 	}
-	return((n == 0) ? NULL : memsrc);
+	return ((n == 0) ? NULL : memsrc);
 }

@@ -6,7 +6,7 @@
 /*   By: vveyrat- <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/02 20:47:59 by vveyrat-     #+#   ##    ##    #+#       */
-/*   Updated: 2019/05/07 13:48:54 by vveyrat-    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/06/06 16:15:42 by vveyrat-    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -27,6 +27,7 @@ typedef struct	s_list
 
 int				ft_atoi(const char *str);
 void			ft_bzero(void *s, size_t n);
+int				ft_facto(int n);
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
 int				ft_isascii(int c);
@@ -46,6 +47,7 @@ void			*ft_memcpy(void *dst, const void *src, size_t n);
 void			ft_memdel(void **ap);
 void			*ft_memmove(void *dst, const void *src, size_t n);
 void			*ft_memset(void *b, int c, size_t n);
+int				ft_power(int n, int p);
 void			ft_putchar(char c);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putendl(char const *s);

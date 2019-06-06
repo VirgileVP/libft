@@ -6,7 +6,7 @@
 #    By: vveyrat- <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/10/04 10:38:57 by vveyrat-     #+#   ##    ##    #+#        #
-#    Updated: 2019/05/10 11:52:33 by vveyrat-    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/06/06 16:15:05 by vveyrat-    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -20,6 +20,7 @@ CONVERT= convert/
 INT= int/
 IS= is/
 LST= lst/
+MATH= math/
 MEM= mem/
 OTHER= other/
 PUT= put/
@@ -55,6 +56,12 @@ LSTSRCS=	ft_lstadd.c \
 			ft_lstmap.c \
 			ft_lstnew.c \
 
+
+MATHSRCS=   ft_power.c \
+			ft_facto.c \
+			ft_cosd.c \
+			ft_sind.c
+			
 
 MEMSRCS=	ft_memalloc.c \
 			ft_memccpy.c \
@@ -123,6 +130,7 @@ SRCS= 	$(addprefix $(CONVERT),$(CONVERTSRCS)) \
 		$(addprefix $(INT),$(INTSRCS)) \
 		$(addprefix $(IS),$(ISSRCS)) \
 		$(addprefix $(LST),$(LSTSRCS)) \
+		$(addprefix $(MATH),$(MATHSRCS)) \
 		$(addprefix $(MEM),$(MEMSRCS)) \
 		$(addprefix $(OTHER),$(OTHERSRCS)) \
 		$(addprefix $(PUT),$(PUTSRCS)) \
