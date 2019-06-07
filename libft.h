@@ -25,6 +25,7 @@ typedef struct	s_list
 	struct s_list	*next;
 }				t_list;
 
+char			*ft_alltoa(long long nb);
 int				ft_atoi(const char *str);
 void			ft_bzero(void *s, size_t n);
 int				ft_facto(int n);
@@ -37,8 +38,6 @@ int				ft_incharset(char c, const char *charset);
 int				ft_is_strdigit(char *str);
 char			*ft_itoa(int c);
 char			*ft_itoa_base(int value, int base);
-char			*ft_ultoa_base(unsigned long value, int base);
-char			*ft_alltoa(long long nb);
 void			*ft_memalloc(size_t size);
 void			*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void			*ft_memchr(const void *s, int c, size_t n);
@@ -96,6 +95,8 @@ void			ft_strmove(char *begin_str, char *new_begin);
 char			ft_to_ascii(int c);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
+char			*ft_ultoa_base(unsigned long value, int base);
+
 
 /*
  **BONUS

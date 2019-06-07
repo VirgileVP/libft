@@ -58,9 +58,7 @@ LSTSRCS=	ft_lstadd.c \
 
 
 MATHSRCS=   ft_power.c \
-			ft_facto.c \
-			ft_cosd.c \
-			ft_sind.c
+			ft_facto.c 
 			
 
 MEMSRCS=	ft_memalloc.c \
