@@ -13,7 +13,6 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include "garbage.h"
 # include <unistd.h>
 # include <stdlib.h>
 # include <unistd.h>

@@ -15,7 +15,7 @@
 
 int	ft_strout(char **str, int status)
 {
-	FREE(*str);
+	free(*str);
 	*str = NULL;
 	return (status);
 }

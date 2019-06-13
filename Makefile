@@ -68,8 +68,7 @@ MEMSRCS=	ft_memalloc.c \
 			ft_memcpy.c \
 			ft_memdel.c \
 			ft_memmove.c \
-			ft_memset.c \
-			garbage_alloc.c
+			ft_memset.c
 
 OTHERSRCS=	ft_bzero.c \
 			ft_count_words.c \

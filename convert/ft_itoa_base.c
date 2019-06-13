@@ -25,7 +25,7 @@ char	*ft_itoa_base(int value, int base)
 	int		index;
 	int		operat;
 
-	if (!(res = (char*)MALLOC(sizeof(char) * 34)))
+	if (!(res = (char*)malloc(sizeof(char) * 34)))
 		return (NULL);
 	operat = 1;
 	if (value < 0)
