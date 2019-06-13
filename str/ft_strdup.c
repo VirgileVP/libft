@@ -21,7 +21,7 @@ char	*ft_strdup(const char *s)
 	count = 0;
 	if (s)
 	{
-		if (!(loc_cpy = (char *)malloc(sizeof(*loc_cpy) * ft_strlen(s) + 1)))
+		if (!(loc_cpy = (char *)MALLOC(sizeof(*loc_cpy) * ft_strlen(s) + 1)))
 			return (NULL);
 		while (s[count])
 		{

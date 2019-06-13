@@ -38,7 +38,7 @@ char			**ft_strsplit(char const *s, char c)
 
 	next_word = 0;
 	nb_words = ft_count_words((char *)s, c);
-	if (!s || !c || !(tab = (char **)malloc(sizeof(char *) * (nb_words + 1))))
+	if (!s || !c || !(tab = (char **)MALLOC(sizeof(char *) * (nb_words + 1))))
 		return (NULL);
 	word_counter = 0;
 	while (word_counter < nb_words)

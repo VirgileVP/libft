@@ -33,7 +33,7 @@ char	*ft_ultoa_base(unsigned long value, int base)
 	int		len;
 
 	len = ft_ullen(value, base);
-	if (!(res = (char*)malloc(sizeof(char) * len + 1)))
+	if (!(res = (char*)MALLOC(sizeof(char) * len + 1)))
 		return (NULL);
 	index = len;
 	while (value)

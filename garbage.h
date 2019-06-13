@@ -17,7 +17,7 @@
 # include <stdlib.h>
 
 /*
-** Macro to use for allocation and free.
+** Macro to use for allocation and FREE.
 */
 
 # define MALLOC		garbage_malloc

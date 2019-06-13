@@ -21,11 +21,11 @@ char	*ft_fstrjoin_begin(char *s1, char **s2)
 
 	first_str_len = ft_strlen(s1);
 	entire_len = first_str_len + ft_strlen(*s2);
-	if (!(joined_str = (char *)malloc(sizeof(char) * (entire_len + 1))))
+	if (!(joined_str = (char *)MALLOC(sizeof(char) * (entire_len + 1))))
 		return (NULL);
 	ft_strncpy(joined_str, s1, first_str_len);
 	ft_strcpy(joined_str + first_str_len, *s2);
-	free(*s2);
+	FREE(*s2);
 	*s2 = NULL;
 	return (joined_str);
 }

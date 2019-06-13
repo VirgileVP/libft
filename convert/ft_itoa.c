@@ -21,7 +21,7 @@ char		*ft_itoa(int n)
 
 	len = ft_intlenght(n);
 	loc_cpy = n;
-	if (!(res = ((char *)malloc(sizeof(char) * len + 1))))
+	if (!(res = ((char *)MALLOC(sizeof(char) * len + 1))))
 		return (NULL);
 	if (loc_cpy < 0)
 		loc_cpy = -loc_cpy;

@@ -17,7 +17,7 @@ static t_gnl	*ft_initialize(int fd)
 {
 	t_gnl			*new;
 
-	if (!(new = (t_gnl*)malloc(sizeof(*new))))
+	if (!(new = (t_gnl*)MALLOC(sizeof(*new))))
 		return (NULL);
 	new->next = NULL;
 	new->actual = NULL;
@@ -94,7 +94,7 @@ int				get_next_line(const int fd, char **line)
 			return (-1);
 		buffer[reading] = '\0';
 		list->actual = ft_strjoin(list->temp, buffer);
-		free(list->temp);
+		FREE(list->temp);
 		list->temp = list->actual;
 	}
 	return (ft_last_check(list->actual, line));

@@ -17,7 +17,7 @@ void	*ft_memalloc(size_t size)
 {
 	void	*zone_mem;
 
-	if (!(zone_mem = malloc(size)))
+	if (!(zone_mem = MALLOC(size)))
 		return (NULL);
 	if (zone_mem)
 		ft_bzero(zone_mem, size);

@@ -38,7 +38,7 @@ void		free_g_garbage_lst(void)
 /*
 ** garbage_free:
 **
-** Free a given pointer. Remove the allocated
+** free a given pointer. Remove the allocated
 ** pointer of the g_garbage list.
 */
 
@@ -60,7 +60,7 @@ void		garbage_free(void *ptr)
 		prev_garb->next = curr_garb->next;
 	else
 		g_garbage = g_garbage->next;
-	free(curr_garb);
+	FREE(curr_garb);
 }
 
 /*

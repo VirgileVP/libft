@@ -23,7 +23,7 @@ void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 	{
 		next_list = current_list->next;
 		del((current_list->content), (current_list->content_size));
-		free(current_list);
+		FREE(current_list);
 		current_list = next_list;
 	}
 	*alst = NULL;
