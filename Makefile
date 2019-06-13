@@ -6,7 +6,7 @@
 #    By: vveyrat- <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/10/04 10:38:57 by vveyrat-     #+#   ##    ##    #+#        #
-#    Updated: 2019/06/06 16:15:05 by vveyrat-    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/06/13 13:28:18 by vveyrat-    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -69,6 +69,7 @@ MEMSRCS=	ft_memalloc.c \
 			ft_memdel.c \
 			ft_memmove.c \
 			ft_memset.c \
+			garbage_alloc.c
 
 OTHERSRCS=	ft_bzero.c \
 			ft_count_words.c \

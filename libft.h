@@ -6,13 +6,14 @@
 /*   By: vveyrat- <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/02 20:47:59 by vveyrat-     #+#   ##    ##    #+#       */
-/*   Updated: 2019/06/06 16:15:42 by vveyrat-    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/06/13 13:28:02 by vveyrat-    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include "garbage.h"
 # include <unistd.h>
 # include <stdlib.h>
 # include <unistd.h>
