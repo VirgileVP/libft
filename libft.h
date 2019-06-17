@@ -97,7 +97,6 @@ int				ft_tolower(int c);
 int				ft_toupper(int c);
 char			*ft_ultoa_base(unsigned long value, int base);
 
-
 /*
  **BONUS
 */
